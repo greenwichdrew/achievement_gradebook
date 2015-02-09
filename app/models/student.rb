@@ -1,4 +1,6 @@
 class Student < ActiveRecord::Base
+
+  has_and_belongs_to_many :achievements
   has_secure_password
 
   has_many :grades
